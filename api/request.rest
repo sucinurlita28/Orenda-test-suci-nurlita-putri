@@ -1,0 +1,59 @@
+GET  http://localhost:5000/customer
+###
+GET  http://localhost:5000/customer/3
+
+###
+POST   http://localhost:5000/customer
+Content-Type: application/json
+
+{
+    "name": "Suci",
+    "phone": "081212343456",
+    "email": "Suci@gmail.com",
+    "address": "suka karya"
+}
+
+###
+PATCH    http://localhost:5000/customer/1
+Content-Type: application/json
+
+{
+    "name": "John Dul",
+    "email": "johndul@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE    http://localhost:5000/customer/3
+
+
+#product
+###
+
+GET  http://localhost:5000/product
+###
+GET  http://localhost:5000/product/1
+
+###
+POST   http://localhost:5000/product
+Content-Type: application/json
+
+{
+    "name": "Bala",
+    "unit": "AB-1",
+    "price": "Rp.150.000"
+}
+
+###
+PATCH    http://localhost:5000/product/3
+Content-Type: application/json
+
+{
+    "name": "Siska",
+    "unit": "AC-1",
+    "price": "Rp.200.000"
+}
+
+###
+DELETE    http://localhost:5000/customer/1
+
